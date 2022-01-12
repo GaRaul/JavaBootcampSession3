@@ -1,5 +1,5 @@
 
-public class BuclesApp {
+public class FlujoDeDatosApp1 {
 
 	public static void main(String[] args) {
 
