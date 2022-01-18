@@ -22,14 +22,11 @@ public class FlujoDeDatosApp13 {
 		int num2;
 		String simbolo;
 		double resultado = 0;
+		num1 = Integer.valueOf(JOptionPane.showInputDialog("Introduce el primer operando"));
+		num2 = Integer.valueOf(JOptionPane.showInputDialog("Introduce el segundo operando"));
+		simbolo = JOptionPane.showInputDialog("Introduce el primer operando");
 
-		System.out.println("Introduce el primer operando");
-		num1 = teclado.nextInt();
-		System.out.println("Introduce el segundo operando");
-		num2 = teclado.nextInt();
-		System.out.println("Introduce el simbolo aritmetico o escribe 'salir'");
-		simbolo = teclado.next();
-
+		
 		switch (simbolo) {
 		case "+":
 			resultado = num1 + num2;
@@ -50,12 +47,11 @@ public class FlujoDeDatosApp13 {
 			resultado = num1 % num2;
 			break;
 		default:
-			System.out.println("Caracter incorrecto");
+			JOptionPane.showMessageDialog(null, "Introduce un caracter valido");
 			break;
 		}
 		
-		// JOptionPane.showMessageDialog(null, resultado);
-		System.out.println("El resultado es: " + resultado);
+		JOptionPane.showMessageDialog(null, resultado);
 		
 	}
 
